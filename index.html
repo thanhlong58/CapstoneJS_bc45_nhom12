@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Bai tap capstone js</title>
+  <!--slideshow-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <!--fontawsome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+ 
+
+  <!--csss-->
+  <link rel="stylesheet" href="/css/index.min.css">
+</head>
+
+<body>
+  
+
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="./index.html" class="brand">Home</a>
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+      <div class="menu" id="menu">
+        <ul class="menu-inner">
+          <li class="menu-item"><a href="#" class="menu-link">Men</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Women</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Kids</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Custom</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Sale</a></li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <a href="/register.html" target="_blank" class="sign-up">Register</a>
+        <a href="/login.html" target="_blank" class="log-in">Log In</a>
+        <div class="cart-bag">
+          <button id="cart-button" type="button" class="btn btn-dark rounded-circle" data-toggle="modal"
+            data-target="#cartModal">
+            <span><i id="cart-id" class="fa fa-shopping-cart"></i></span>
+          </button>
+        </div>
+      </div>
+
+      
+      <button class=""><i class="bx bx-shopping-bag"></i></button>
+    </nav>
+  </header>
+
+
+  <div id="carousel">
+
+    <figure id="spinner">
+
+      <img src="/img/1.jpg" alt>
+      <img src="/img/2.jpg" alt>
+      <img src="/img/3.jpeg" alt>
+      <img src="/img/4.jpeg" alt>
+      <img src="/img/5.jpg" alt>
+      <img src="/img/6.webp" alt>
+      <img src="/img/8.webp" alt>
+      <img src="/img/9.jpeg" alt>
+
+    </figure>
+  </div>
+  <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+  <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <select class="my-2" name="" id="chonSP">
+      <option value="0">All Products</option>
+      <option value="1">Nike</option>
+      <option value="2">Adidas</option>
+      <option value="3">Vans</option>
+      <option value="4">Converse</option>
+
+    </select>
+
+    <div class="row justify-content-center" id="dsSp">
+     
+
+    </div>
+  </div>
+
+  <!-- Site footer -->
+  <footer class="site-footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam officiis, quos quo fuga aspernatur beatae veniam natus labore voluptatum tempore veritatis nemo voluptate distinctio ea expedita! Voluptates fugiat illum maxime neque nobis, temporibus porro accusamus repudiandae. Distinctio itaque sapiente ipsa, aspernatur repellat maiores consectetur autem alias adipisci, exercitationem nesciunt.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            
+            <li><a href="#">Nike</a></li>
+            <li><a href="#">Adidas</a></li>
+            <li><a href="#">Vans</a></li>
+            <li><a href="#">Converse</a></li>
+           
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+            <a href="#" style="text-decoration: none;">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="pinterest" href="#"><i class="fab fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--codepen-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <!--axios-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"
+    integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!--detail js-->
+  <!-- <script src="/controllers/detail.js"></script> -->
+  <!--main js-->
+  <script src="/controllers/index.js"></script>
+</body>
+
+</html>

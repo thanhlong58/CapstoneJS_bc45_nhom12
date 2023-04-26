@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-register" id="form">
+        <h1>REGISTER</h1>
+        <div class="form-text">
+          <input id="name" name="name" type="text" placeholder="User Name" />
+          <span
+          class="alert"
+          id="tbName"
+        ></span>
+        </div>
+        <div class="form-text">
+          <input id="email" name="email" type="text" placeholder="Email" />
+          <span
+          class="alert"
+          id="tbEmail"
+        ></span>
+        </div>
+        <div class="form-text">
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+          />
+          <span
+          class="alert"
+          id="tbPass"
+        ></span>
+        </div>
+        <div class="form-text">
+          <input
+            id="password-confirm"
+            name="password-confirm"
+            type="password"
+            placeholder="Confirm Password"
+          />
+        </div>
+        <div class="form-text">
+          <input id="phone" name="phone" type="number" placeholder="Phone" />
+          <span
+          class="alert"
+          id="tbPhone"
+        ></span>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <button id="btnSubmit" type="submit">Register</button>
+        <span class="ms-2"
+          >You already have an account? <a href="./login.html">Login here!</a>
+        </span>
+      </form>
+    </div>
+
+    <!--axios-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"
+      integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Jquery -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--model-->
+    <script src="/model/User.js"></script>
+    <!--js-->
+    <script src="/controllers/register.js"></script>
+  </body>
+</html>

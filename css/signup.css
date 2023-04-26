@@ -1,0 +1,75 @@
+:root {
+    --bg1: #9b59b6;
+    --bg2: #3498db;
+    --text: #26ade4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    background: linear-gradient(to bottom right, var(--bg1), var(--bg2));
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.form-register {
+    width: 300px;
+    height: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    
+}
+.form-text, .form-group {
+    margin-bottom: 40px;
+    position: relative;
+}
+.form-text input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid #8888;
+    cursor: pointer;
+}
+.form-register h1 {
+    margin-bottom: 40px;
+}
+
+.form-register .form-text{
+text-align: left ;
+}
+
+.form-register .form-text .alert{
+    color: red;
+    font-size: 0.9rem;
+    font-style: italic;
+    display: none;
+    }
+
+
+.form-register button {
+height: 35px;
+width: 100%;
+margin-bottom: 30px;
+background: linear-gradient(120deg, var(--bg1), var(--bg2));
+border: none;
+color: #fff;
+border-radius: 5px;
+background-size: 200%;
+transition: 0.5s;
+}
+
+.form-register button:hover{
+    background-position: right;
+}
+.form-group {
+    left: -90px;
+}
