@@ -378,7 +378,21 @@ img {
   }
 }
 
+.contact {
+  margin-left: 100px;
+}
 .contact .sign-up {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--black-500);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.contact .log-in {
+  margin-left: 30px;
   text-decoration: none;
   font-family: inherit;
   font-size: var(--text-sm);
