@@ -344,35 +344,8 @@ function renderCart(mangCart) {
 
 
 
-//cong item
-// function increment(spId) {
-//   console.log(spId);
-//   let tien1Mon = 0;
-//   let tongTien  =0;
 
-//      for(let i  = 0 ; i< arrCart.length; i++) {
-//     let sp = arrCart[i];
-
-//     if (sp.id == spId) {
-//         console.log(sp);
-//         sp.quantity++;
-
-
-
-//         document.querySelector(`#input${spId}`).value = sp.quantity;
-
-//         tien1Mon = sp.price * sp.quantity;
-
-
-
-//         document.querySelector(`#tong-tien${spId}`).innerHTML = tien1Mon;
-
-
-//        }
-//       tongTien += tien1Mon;
-// }
-// document.querySelector('#bill').innerHTML = tongTien;
-// }
+//cong item trong gio hang
 function increment(spId) {
 
 
@@ -404,7 +377,7 @@ function increment(spId) {
 
 
 
-//tru item
+//tru item trong gio hang
 function decrement(spId) {
 
     console.log(spId);
@@ -417,7 +390,7 @@ function decrement(spId) {
         if (sp.id == spId) {
             console.log(sp);
 
-            // prevent quantity from becoming negative
+            // so luong san pham phai lon hon 0
             if (sp.quantity > 0) {
                 sp.quantity--;
                 document.querySelector(`#input${spId}`).value = sp.quantity;
@@ -438,7 +411,7 @@ function decrement(spId) {
 
 
 
-//gia tri gio hang
+//so luong gio hang hien tren the span giao dien
 function soLuongGioHang(mangGioHang) {
 
 
@@ -506,17 +479,6 @@ function getStorage() {
 }
 
 getStorage();
-
-
-//select size
-
-
-
-
-
-
-
-
 
 
 

@@ -40,7 +40,7 @@ function renDerSP (mangSp) {
     for (var index= 0 ; index < mangSp.length;index++ ) {
         var sp = mangSp [index];
         htmlContent +=`
-        <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" id="sneaker" class="mt-4 mx-3 grow col-xl-2 col-md-3 col-sm-6 col-12"  onclick="window.location='./detail.html?productid=${sp.id}';">
+        <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" id="sneaker" class="rounded-2 mt-3 mx-2 grow col-xl-2 col-md-3 col-sm-6 col-12"  onclick="window.location='./detail.html?productid=${sp.id}';">
        
         <div class="product-grid2 ">
             <div class="product-image2">
@@ -80,21 +80,7 @@ function renDerSP (mangSp) {
     return htmlContent;
 }
 
-//slideshow
 
-var angle = 0;
-function galleryspin(sign) { 
-spinner = document.querySelector("#spinner");
-if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
-spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
-}
-
-function rotateSpinner() {
-    var spinner = document.querySelector("#spinner");
-    angle += 45;
-    spinner.setAttribute("style", "-webkit-transform: rotateY(" + angle + "deg); -moz-transform: rotateY(" + angle + "deg); transform: rotateY(" + angle + "deg);");
-  }
-  setInterval(rotateSpinner, 2000);
 //loc san pham 
 
 document.querySelector('#chonSP').onchange = function () {
@@ -149,6 +135,20 @@ document.querySelector('#chonSP').onchange = function () {
 
 
 
-//switch theme
+//slideshow
+
+var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+
+function rotateSpinner() {
+    var spinner = document.querySelector("#spinner");
+    angle += 45;
+    spinner.setAttribute("style", "-webkit-transform: rotateY(" + angle + "deg); -moz-transform: rotateY(" + angle + "deg); transform: rotateY(" + angle + "deg);");
+  }
+  setInterval(rotateSpinner, 2000);
 
 
