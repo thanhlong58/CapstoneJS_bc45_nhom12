@@ -40,6 +40,7 @@ form.addEventListener('submit', (event) => {
   const formData = new FormData(form);
   // window.location.href = "./index.html";
   console.log(Object.fromEntries(formData));
+  form.reset()
 })
 
 // VALIDATION
