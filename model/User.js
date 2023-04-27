@@ -1,9 +1,7 @@
-function User (userName, userEmail, userPhone, userPassWord) { 
-    this.email = userEmail,
-    this.passWord = userPassWord,
-    this.name = userName,
+function User () { 
+    this.email = '',
+    this.password = '',
+    this.name = '',
     this.gender = true;
-    this.phone = userPhone;
-    
-
-}
+    this.phone = '';
+}  
