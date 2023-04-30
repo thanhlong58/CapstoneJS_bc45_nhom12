@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <title>Hey! Are you a sneakerhead?</title>
+   <link rel="icon" href="/img/favicon.ico" type="image/png">
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!--animate style-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <!--font awsome-->
+   <!--fontawsome-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   
+   <!--scss-->
+   <link rel="stylesheet" href="/css/detail.min.css">
+</head>
+
+<body>
+   <!-- Header Section -->
+   <header class="header" id="header">
+      <nav class="navbar container">
+         <a href="./index.html" class="brand">Home</a>
+         <div class="burger" id="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+         </div>
+         <div class="menu" id="menu">
+            <ul class="menu-inner">
+               <li class="menu-item"><a href="#" class="menu-link">Men</a></li>
+               <li class="menu-item"><a href="#" class="menu-link">Women</a></li>
+               <li class="menu-item"><a href="#" class="menu-link">Kids</a></li>
+               <li class="menu-item"><a href="#" class="menu-link">Custom</a></li>
+               <li class="menu-item"><a href="#" class="menu-link">Sale</a></li>
+            </ul>
+         </div>
+
+         <div class="gio-hang">
+            <div class="cart-bag">
+               <button id="cart-button" type="button" class="btn btn-dark rounded-circle" data-toggle="modal"
+                  data-target="#cartModal">
+                  <span><i id="cart-id" class="fa fa-shopping-cart"><span id="soLuongSP">0</span></i></span>
+               </button>
+            </div>
+         </div>
+
+         <div class="contact">
+            <a href="/register.html"  class="sign-up">Register</a>
+            <a href="#" class="log-in">Log In</a>
+            
+          </div>
+    
+         <button class=""><i class="bx bx-shopping-bag"></i></button>
+      </nav>
+   </header>
+   <div class="container-fluid">
+      <main class="main" id="detail-content" >
+
+      </main>
+   </div>
+
+
+   <div class="container" id="detailSP">
+
+   </div>
+   <hr>
+   <div class="container">
+      <h3 style="text-align: center;">You also might like</h3>
+   </div>
+   
+   <div class="container">
+      <div class="related-items">
+         <div class="row" id="related-items"></div>
+
+      </div>
+   </div>
+
+
+
+
+   <div id='carousel_container'>
+      <div id='carousel_inner'>
+         <ul id='carousel_ul'>
+
+
+         </ul>
+      </div>
+   </div>
+
+
+
+   <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+         <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+               <h5 class="modal-title" id="exampleModalLabel">
+                  Your Shopping Cart
+               </h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <table class="table table-image">
+                  <thead>
+                     <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Actions</th>
+                     </tr>
+                  </thead>
+                  <tbody id="listCart">
+
+                  </tbody>
+               </table>
+               <div class="d-flex justify-content-end">
+                  <h5>Total: <span id="bill" class="price text-success"></span></h5>
+               </div>
+            </div>
+            <div class="modal-footer border-top-0 d-flex justify-content-between">
+               <button type="button" id="btnClose" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <button id="checkout" type="button" class="btn btn-success">Checkout</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!--related products-->
+   <div id="related-product">
+
+      <div class="row">
+
+      </div>
+   </div>
+   <a href="./detail.html?productid="></a>
+
+   <!--footer-->
+   <footer class="site-footer mt-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12 col-md-6">
+               <h6>About</h6>
+               <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam
+                  officiis, quos quo fuga aspernatur beatae veniam natus labore voluptatum tempore veritatis nemo
+                  voluptate distinctio ea expedita! Voluptates fugiat illum maxime neque nobis, temporibus porro
+                  accusamus repudiandae. Distinctio itaque sapiente ipsa, aspernatur repellat maiores consectetur autem
+                  alias adipisci, exercitationem nesciunt.</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+               <h6>Categories</h6>
+               <ul class="footer-links">
+
+                  <li><a href="#">Nike</a></li>
+                  <li><a href="#">Adidas</a></li>
+                  <li><a href="#">Vans</a></li>
+                  <li><a href="#">Converse</a></li>
+
+               </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+               <h6>Quick Links</h6>
+               <ul class="footer-links">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Contribute</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Sitemap</a></li>
+               </ul>
+            </div>
+         </div>
+         <hr>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+               <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+                  <a href="#" style="text-decoration: none;">Scanfcode</a>.
+               </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+               <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a class="pinterest" href="#"><i class="fab fa-pinterest"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+
+
+   <!--sweetalert-->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!--codepen-->
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <!--axios-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"
+      integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+   <!--model-->
+   <script src="/model/SanPham.js"></script>
+   <script src="./controllers/detail.js"></script>
+</body>
+
+</html>
